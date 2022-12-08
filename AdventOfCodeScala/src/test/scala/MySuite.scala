@@ -30,8 +30,8 @@ class MySuite extends munit.FunSuite {
     assertEquals(day.taskOneLogic(), taskOne)
   }
   test("day 05") {
-    val taskZero = noSolutionFound
-    val taskOne = noSolutionFound
+    val taskZero = "HBTMTBSDC"
+    val taskOne = "PQTJRSHWS"
     val day = Day05()
     assertEquals(day.taskZeroLogic(), taskZero)
     assertEquals(day.taskOneLogic(), taskOne)
