@@ -1,4 +1,4 @@
 import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
 @main def main: Unit =
-  Day11().executeWholeDay()
+  Day12().executeWholeDay()
