@@ -71,7 +71,7 @@ class Day16 extends Day {
         .maxOption match
         case Some(m) => m
         case None => amount
-    else if minutesLeft._2 > minutesLeft._1 then
+    else if minutesLeft._2 > minutesLeft._1 || currentLabel._1 == currentLabel._2 then
       paths(currentLabel._2)
         .filter((l, c) => !doneSet.contains(l) && newMinutesLeft - c > 0)
         .map((l, c) =>
@@ -86,7 +86,7 @@ class Day16 extends Day {
         .maxOption match
         case Some(m) => m
         case None => amount
-    else
+    else if currentLabel._1 != currentLabel._2 then
       paths(currentLabel._2)
         .filter((l, c) => !doneSet.contains(l) && newMinutesLeft - c > 0)
         .map((l, c) =>
@@ -112,6 +112,7 @@ class Day16 extends Day {
         .maxOption match
         case Some(m) => m
         case None => amount
+    else amount
   override def taskOneLogic(): String =
     getMaxPressureReleaseOne(("AA", "AA"), 0, (26, 26), mutable.Stack[String]("AA")).toString
 }
