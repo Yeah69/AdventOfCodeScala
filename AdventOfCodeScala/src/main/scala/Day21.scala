@@ -6,7 +6,7 @@ import scala.util.matching.Regex
 class Day21 extends Day {
 
   override val label: String = "21"
-  override val input: String = Source.fromResource(s"Day21.txt").mkString
+  override val input: String = Source.fromResource(s"Day$label.txt").mkString
   private val monkeys: Map[String, (String, Char, String)|Long] =
     input.linesIterator
       .map(line =>

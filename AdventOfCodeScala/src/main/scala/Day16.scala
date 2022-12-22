@@ -7,7 +7,7 @@ import scala.util.matching.Regex
 class Day16 extends Day {
 
   override val label: String = "16"
-  override val input: String = Source.fromResource(s"Day16.txt").mkString
+  override val input: String = Source.fromResource(s"Day$label.txt").mkString
 
   private val linePattern: Regex = "Valve (.+) has flow rate=(.+); (tunnels lead to valves|tunnel leads to valve) (.+)".r
 

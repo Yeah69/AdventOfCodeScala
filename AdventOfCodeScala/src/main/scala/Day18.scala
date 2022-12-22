@@ -6,7 +6,7 @@ import scala.jdk.CollectionConverters.*
 class Day18 extends Day {
 
   override val label: String = "18"
-  override val input: String = Source.fromResource(s"Day18.txt").mkString
+  override val input: String = Source.fromResource(s"Day$label.txt").mkString
 
   private val data: Set[(Int, Int, Int)] =
     input.linesIterator
